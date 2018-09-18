@@ -8,6 +8,7 @@ env:
 deploy:
   provider: heroku
   api_key:
-    secure: 6ab531e4-3bd9-4d71-b1fa-594e3fa42162 
+    secure: 6ab531e4-3bd9-4d71-b1fa-594e3fa42162
+  app: limitless-waters-90240
   on:
     repo: Shubanshii/hot-cold2
