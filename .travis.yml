@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: dPP8ryBCjCIajuIC1flqPQxIrEnfUhgI0TARM06QLJ/2Pcgq32N9+kCmPwOPu84TnJj3Lxjq1w6XAoaMa6RrhTVg1gUEnmSntQ7WkzDl1zOCCpn9FdgYy7mJpI4ahbH5KRYrlGPvlSEPpzd7U2pHSEcuz2Jlkc2qR972QvqBiJt/EGRab5p+HtU7WUBC5htvKZwEAgLcG8KqgCIQwZqW1M78SUJHnpEObQddwKQjJ1IGx7XEAt3J+97RxEedULnQ35S1EL1SdNIXK0rwl4gFYL2FPtdo1YuJgiN7WMweQ70rWj0PuCpY9wN6X5y15NyDYm0P9JUtGNc36G/dq712mKQEYR4YpPrEc/64T8l4PhKRKePsGo1cWJ8BFxt3N55gpWZ32xzVOP8UdYq2jJBZU49/p6gF0ci+5S0VMXhRp0WIhLafXsjLYfT85q92BxMMglSIDyXScF8tyxvKMtxJ/tT1se6bTyAop0KduIdqr9c9Kz30kPj94sWME5ioJQZLZkNaWcXjup3jG4tBW/zEEOAypUBu3BJgu0WXsiRMLt0SsoBqKUqPaD9CZppaLFB8KBvGnrqmuDlmgfwRQ+uEeHiLZhIDlBvCP4qLYml0rWkWad7Dn19A28VT7Ol83F7pTh4aSZOrhcczWthk0WLFrJ3tQobedaWMkdBTD7oknRk=
+  app: limitless-waters-90240
+  on:
+    repo: Shubanshii/hot-cold2
